@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-cn">
+    <head>
+        <title>聊天</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta name="description" content="聊天">
+        <link id="theme" rel="stylesheet" type="text/css" href="article.css">
+        <link rel="stylesheet" href="waline.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="header">
+            <h1>联系contact</h1>
+        </div> <!-- 导航栏 --> <!--
+        <ul class="navbar">
+            <li><a href="index.html"><i class="fa fa-home" style="color:#FFFFFF"></i>主页</a></li>
+            <li><a href="friends.html"><i class="fa fa-link" style="color:#FFFFFF"></i>友链</a></li>
+            <li class="act"><a href="talk.html">留言板</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li><a href="https://www.travellings.cn/go.html" target="_blank" rel="noopener" title="开往-友链接力"><i class="fa fa-subway" style="color:#FFFFFF"></i>开往</a></li>
+            <li><a href="atom.xml"><i class="fa fa-rss" style="color:#FFFFFF"></i>RSS</a></li>
+        </ul> --><!-- 弹性网格row（内容） -->
+        <div class="main">
+            <div id="waline"></div>
+            <script type="module">
+    import { init } from 'https://static.bugcoder.asia/js/waline.mjs';
+
+    init({
+      el: '#waline',
+      serverURL: 'waline.bugcoder.asia',
+      path: 'contact',
+      search: false,
+      emoji: [
+      'https://emoji.bugcoder.asia/bmoji',
+      'https://emoji.bugcoder.asia/qq',
+      'https://emoji.bugcoder.asia/tieba',
+      'https://emoji.bugcoder.asia/oneshot',
+      ],
+    });
+  </script>
+            <h3>备用方式</h3>
+            <div id="commento"></div>
+            <script defer src="https://commento.net/js/commento.js"></script>
+        </div>
+        <div class="footer">
+            <p>由爱驱动 | Powered by the Love</p>
+            <p><a href="https://eu.umami.is/share/Rx4Kh5fy10nBMnMm/love.bugcoder.asia">统计信息</a></p>
+        </div> <!--统计访问-->
+        <script defer src="https://eu.umami.is/script.js" data-website-id="17d60d47-2a70-4b9f-af7f-e989090ac175"></script>
+    </body>
+</html>
